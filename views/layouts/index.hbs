@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="scroll-smooth max-w-screen-2xl " lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <title>Bienvenido | Génesis Bienes Raíces </title>
+</head>
+
+<body>
+  <header
+    class="header sticky top-0 z-[99] text-blue-900 bg-white flex justify-between shadow-slate-300 items-center shadow-sm">
+    <article class="bg-slate-50 flex items-center pr-5">
+      <figure class="header-logo"> <img class="w-14 p-2.5" src="css/img/LogoPrincipal.jpg"
+          alt="Genesis y Bienes Raices"></figure>
+      <nav class="header-title flex-auto flex-nowrap text-lg font-bold">
+        <h2 class="title text-base flex-grow">Génesis Bienes Raíces</h2>
+      </nav>
+    </article>
+
+    <div class="formulario-busqueda">
+      <form>
+        <input class="input-busqueda" type="text" name="buscar" id="btn-buscar">
+        <input class="input-search" type="submit" value="🔍">
+      </form>
+    </div>
+
+    <article class="header-options options sm:flex hidden w-52">
+      <ul class="flex justify-around">
+        <li> <a class="bg-green-800 text-sm w-2 p-2 m-2 shrink text-slate-50 rounded-md shadow-xl"
+            href="./login">Iniciar Sesión </a></li>
+        <li> <a class="bg-palette-vivo-blue text-sm w-2 p-2 shrink text-slate-50 rounded-md shadow-xl"
+            href="./register">Registrarse </a></li>
+      </ul>
+    </article>
+  </header>
+  <div class="container-carrusel overflow-hidden" id="top">
+    <div
+      class="relative carrusel flex max-h-full w-slider  sm:max-h-[500px] md:max-h-[600px] lg:max-h-[650] xl:max-h-[700px] -ml-[100%] before:w-full before:h-full before:bg-[rgba(0,0,0,0.5)] before:absolute before:z-50 before:content-[''] before:">
+      <section class="carrusel-section"> <img class="w-full content-center overflow-hidden"
+          src="css/img/workspace-gf8e091dcc_1920.jpg" alt="Tu espacio de trabajo deseado"></section>
+      <section class="carrusel-section"><img class="w-full content-center overflow-hidden"
+          src="css/img/cactus-g827cfade7_1920.jpg" alt="Lavabo con estilo de interiores calidos"></section>
+      <section class="carrusel-section"> <img class="w-full content-center bg-center overflow-hidden"
+          src="css/img/house-g64c114e10_1920.jpg" alt="Las llaves de tu hogar en tus manos"></section>
+    </div>
+    <div class="absolute top-[100px] sm:top-[300px] md:top-[325px] lg:top-[375px] w-[80%] h-[40%] ml-5 z-[50]">
+      <h1
+        class="font-sans font-semibold text-slate-50  z-50 left-5 text-xl sm:left-6 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+        Promoviendo Hogares <br><span class="text-sm sm:text-sm md:text-base lg:text-lg xl:text-2xl">Venta Renta &
+          Alquiler </span></h1>
+      <form class=" w-[calc(100%-1.25rem)] h-30 mt-4 z-50"><input class="max-w-[400px] h-8 w-[45%] opacity-60"
+          type="search" name="buscar" id="txtBuscar"><input
+          class="btnBuscar cursor-pointer max-w-[300px] bg-palette-opaque-darkblue text-slate-100 font-semibold w-[30%] h-10 shadow-xl p-2 rounded-sm hover:bg-palette-blue hover:-translate-y-0.5 transition-all"
+          type="button" value="Buscar"></form>
+    </div>
+  </div>
+  <aside class="aside w-[200px] sticky top-20 z-[99999] mt-5 ml-4 border-r-2 hidden md:inline-block">
+    <h3 class="alist-tilte text-slate-900 font-semibold"><a href="#top">Categorías</a></h3>
+    <ol class="alist-subtitles list-decimal ml-5">
+      <li class="mt-2 pt-2 pb-1"><a class="link-title" href="#titulo1">
+          <h4 class="alist-subtitle w-fit"> Casa Hogar</h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"> <a class="link-title" href="#titulo2">
+          <h4 class="alist-subtitle w-fit"> departamento </h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"><a href="#titulo3">
+          <h4 class="alist-subtitle w-fit"> Edificio</h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"><a href="#titulo4">
+          <h4 class="alist-subtitle w-fit"> Isla </h4>
+        </a></li>
+        <li class="mt-2 pt-2 pb-1"><a href="#titulo5">
+          <h4 class="alist-subtitle w-fit"> Finca </h4>
+        </a></li>
+    </ol>
+    <!--Fin del Aside Inspector-->
+  </aside>
+
+
+  <!--  <aside class="aside w-[200px] sticky top-20 z-[99999] mt-5 ml-4 border-r-2 hidden md:inline-block">
+    <h3 class="alist-tilte text-slate-900 font-semibold"><a href="#top">Genesis y Bienes Raíces</a></h3>
+    <ol class="alist-subtitles list-decimal ml-5">
+      <li class="mt-2 pt-2 pb-1"><a class="link-title" href="#titulo1">
+          <h4 class="alist-subtitle w-fit"> ¿Quiénes somos?</h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"> <a class="link-title" href="#titulo2">
+          <h4 class="alist-subtitle w-fit"> Encuentre su Inmueble</h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"><a href="#titulo3">
+          <h4 class="alist-subtitle w-fit"> ¿Quieres vender?</h4>
+        </a></li>
+      <li class="mt-2 pt-2 pb-1"><a href="#titulo4">
+          <h4 class="alist-subtitle w-fit"> Contactanos </h4>
+        </a></li>
+    </ol>
+    
+  </aside>-->
+
+</body>
+
+
+<style>
+  .formulario-busqueda>form{
+
+    display: flex;
+    align-items: center;
+  }
+  .input-busqueda{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 20em;
+    font-size: x-large;
+  }
+
+  .input-search{
+     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+     padding: 0.4em;
+     font-size: medium;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+   }
+
+  .card-viewer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    float: right;
+    margin: 2em 0 0 0;
+
+  }
+  .cardview{
+    flex: 1 1 350px;
+    padding: 2em;
+    background-color: aliceblue;
+    border-radius: 1.5em;
+    box-shadow: 1px 2px 7px 1px rgba(0,0,0,.5);
+    margin: 0 1em 1.25em;
+  }
+
+  .fig-img{
+    background-color: rgba(17, 17, 17, 0.048);
+  }
+
+  .cardview > .fig-img > img{
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .cardview:hover{
+    cursor: pointer;
+    background-color: rgba(204, 218, 230, 0.452);
+  }
+
+  .theme{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: .3em;
+  }
+
+  .content{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, .6);
+    font-style: italic;
+    padding: .3em;
+  }
+
+  .details{
+    display: flex;
+    justify-content: space-between;
+    padding: .25em;
+  }
+</style>
+
+<div class="card-viewer">
+  <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Título</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://images.pexels.com/photos/5733828/pexels-photo-5733828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://images.pexels.com/photos/6129970/pexels-photo-6129970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="cardview">
+    <figure class="fig-img">
+      <img src="https://placeimg.com/200/200/arch">
+    </figure>
+
+    <div class="content-theme">
+      <h4 class="theme">Titulo</h4>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, labore expedita </p>
+      <div class="details">
+        <span>⭐⭐⭐⭐⭐</span>
+        <p class="price">$ 200.00</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<main style="display:none" class=" md:-mt-56 flex align-top justify-end">
+  <!--Contenido-->
+  <section class="section-articles">
+    <article class="articulo" id="titulo1">
+      <h3 class="titulo"> ¿Quiénes somos?</h3><img src="css/img/logo.jfif" alt="Génesis Bienes Raices">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error facere corporis voluptatibus placeat
+        totam debitis, sapiente numquam fugit labore assumenda est. Culpa repellendus ipsam minus dolorum accusantium
+        obcaecati vitae!</p>
+    </article>
+    <article class="articulo" id="titulo2">
+      <h3 class="titulo"> Encuentre su Inmueble </h3><img src="css/img/icons/search.png" alt="Lupa de busqueda">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error facere corporis voluptatibus placeat
+        totam debitis, sapiente numquam fugit labore assumenda est. Culpa repellendus ipsam minus dolorum accusantium
+        obcaecati vitae!</p>
+    </article>
+    <article class="articulo" id="titulo3">
+      <h3 class="titulo"> ¿Quieres vender?</h3><img src="css/img/icons/deal.png"
+        alt="Mano entregando las llaves del Hogar">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere error ratione dolorum eius ab ad
+        eligendi reprehenderit est minima voluptate, hic ducimus cumque nobis quaerat eos expedita consequatur
+        necessitatibus!</p>
+      <p> Conozca como empezar a vender sus propiedades <a href="#">aquí</a></p>
+    </article>
+    <article class="articulo" id="titulo4">
+      <h4 class="titulo"> Contactanos </h4><img src="css/img/icons/paper-plane.png"
+        alt="Avión de papel para enviar el mensaje">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis earum atque quo. Deleniti corrupti aliquid
+        esse. Sapiente expedita, provident beatae quam labore deserunt nostrum illo quae itaque sint ullam at.</p>
+    </article>
+  </section>
+</main>
+
+{{> footer }}

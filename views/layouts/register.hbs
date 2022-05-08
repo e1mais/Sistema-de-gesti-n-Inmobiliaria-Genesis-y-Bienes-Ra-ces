@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" id="theme-styles">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Registrate</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-register">
+      <h3 class="title"> </h3>
+      <div class="container-content">
+        <div class="form-register">
+          <div class="container-img">
+            <img src="css/img/LogoPrincipal-letter.jpg" alt="Genesis Bienes Raices" />
+          </div>
+          <h4>Registrate</h4>
+          <h5>Datos personales</h5>
+          <form class="form-log" method="post">
+            <div class="form-row">
+              <div class="row"><input class="input-log" type="text" name="names" required /><span
+                  class="form-span">Nombres</span></div>
+              <div class="row"><input class="input-log" type="text" name="lastnames" required /><span
+                  class="form-span">Apellidos</span></div>
+            </div>
+            <div class="form-row p100">
+              <div class="row">
+                <input class="input-log mail" type="email" title="Este correo no es valido" name="email"
+                  required /><span class="form-span">Correo eléctronico
+                </span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="row"><input class="input-log" type="password" name="password" required /><span
+                  class="form-span">Contraseña</span></div>
+              <div class="row"><input class="input-log" type="password" name="confpassword" required /><span
+                  class="form-span">Confirmar contraseña</span></div>
+            </div>
+            <div class="row-conf">
+              <p class="p-strong">Contraseña debil </p>
+              <p class="p-conf">Las
+                contraseña no coincide
+              </p>
+            </div>
+            <div class="submit-form"><input class="button-submit" type="submit" value="Registrate" />
+              <div class="check-form"><span class="check-span">Mostrar
+                  Contraseña</span><input type="checkbox" id="check-pass" name="show-psw" /></div>
+            </div>
+          </form>
+        </div>
+        <div class="content-user-photo">
+          <figure class="rounded-img">
+            <img src="css/img/icons/user.png" alt="foto de usuario" />
+          </figure>
+        </div>
+        <p class="terms">Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Maxime alias ipsa sint deleniti a
+          libero error vel laudantium numquam ab quibusdam incidunt quod magni
+          illum fugit ea, provident quia soluta.</p>
+      </div>
+    </div>
+  </div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> {{!-- Sweet alert cdn--}}
+
+  {{#if alert }}
+    <script>
+        Swal.fire({
+          title : '{{ alertTitle }}',
+          html : '{{ alertMessage }}',
+          icon : '{{ alertIcon }}',
+          showConfirmButton : {{ showConfirmButton }},
+          timer : {{ timer }}
+        })
+    </script>
+  {{/if}}
+
+  
+  {{#if alert1 }}
+    <script>
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        html: '{{ alertMessage }}',
+        showConfirmButton: false,
+        timer: {{timer}},
+      }).then(()=>{
+        window.location = '/{{ruta}}'
+      })
+
+      document.querySelector('input[name="username"]').focus()
+    </script>
+    {{/if}}
+
+</body>
+<script src="form.js"> </script>
+</html>

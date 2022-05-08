@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" id="theme-styles">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Iniciar Sesión</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-login">
+      <div class="content-log">
+        <figure class="form-img"> <img src="css/img/logo.jfif" alt="Genesis Bienes Raices"></figure>
+        <div class="content-text">
+          <h3 class="title-log"> Genesis Bienes Raíces</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="content-form">
+        <form class="form-log" method="post"><input class="input-log" type="text" name="username"
+            title="Nombre de usuario solo acepta letras y números" placeholder="Nombre de usuario"><br><input class="input-log" type="password" name="password"
+            title="" placeholder="Contraseña"><br>
+          <div class="submit-form"><input class="button-submit" type="submit" value="Iniciar Sesión"><a
+              class="link-form" href="#">Olvide mi contraseña </a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> {{!-- Sweet alert cdn--}}
+
+  {{#if alert }}
+    <script>
+        Swal.fire({
+          title : '{{ alertTitle }}',
+          html : '{{ alertMessage }}',
+          icon : '{{ alertIcon }}',
+          showConfirmButton : {{ showConfirmButton }},
+          timer : {{ timer }}
+        })
+    </script>
+  {{/if}}
+
+</body>
+
+</html>
